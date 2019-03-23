@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Guitar Quiz</title>
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <!-- column div needs breakpoint-->
+        <div class="col-md-8">
+          <h1 class="mb-3">The Great Guitar Quiz</h1>
+
+          <h2>What is a Guitar?</h2>
+
+          <p>The guitar is a stringed musical instrument that amplifies the vibration of its strings to create a tone.</p>
+
+          <p>The origin of the guitar is uncertain, although one of the earliest references to the instrument known as a guitar can be traced to 1200 A.D. Spain. It is likely that the guitar evolved from different instruments like the <i>lute</i>, <i>oud</i>, and other <em>chordophones</em>.</p>
+
+          <p>A <dfn>chordophone</dfn> is a stringed instrument that makes sound by vibrating one or multiple strings stretched between two points.</p>
+          <p>This quiz was generated from <a href="https://en.wikipedia.org/wiki/Guitar">Wikipedia</a>. Chordophone definition courtesy of <a href="https://en.wikipedia.org/wiki/Chordophone">Wikipedia</a>.</p>
+
+          <h2>The Quiz</h2>
+
+          <form action="index.html" method="post">
+            <!--text field 1 (name & id)-->
+            <div class="form-group">
+              <label class="form-control-label">Which type of guitar relies on a hollow body to amplify string vibrations?
+                <input type="text" class="form-control" name="type-acoustic"  id="type-acoustic" placeholder="Type your answer here">
+              </label>
+            </div>
+
+            <!--  text field 2 (name & id)-->
+            <div class="form-group">
+              <label class="form-control-label">Which type of guitar relies on electromagnetic pickups and a loud speaker to amplify string vibrations?
+                <input type="text" class="form-control" name="type-electric" id="type-electric" placeholder="Type your answer here">
+              </label>
+            </div>
+
+            <!--  textarea (name, id & rows but NOT cols)-->
+            <div class="form-group">
+              <label class="form-control-label">What are some of the most popular music genres in which a guitar features prominently?
+                <textarea name="type-music-genres" class="form-control" id="type-music-genres" rows="3" placeholder="Type examples here."></textarea>
+              </label>
+            </div>
+
+
+            <!--  radio buttons (4 options-type, name, value)-->
+            <div class="form-group">
+
+              <label class="form-control-label">How many strings does a guitar typically have?</label>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="string-no" value="4">4</label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="string-no" value="6">6</label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="string-no" value="8">8</label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="string-no" value="10">10</label>
+              </div>
+
+            </div>
+
+            <!-- checkboxes (4 options-type, name, value)-->
+              <div class="form-group">
+                <label class="form-control-label">Which of the following are parts of a guitar?</label>
+
+              <!-- check label class here-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="headstock">Headstock</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="nut">Nut</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="bow">Bow</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="neck">Neck</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="keyboard">Keyboard</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="pinblock">Pin Block</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="bridge">Bridge</label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="parts" value="snare">Snare</label>
+                </div>
+
+              </div>
+
+            <!--  select element (6 options-name,id, each option must have value)-->
+              <div class="form-group">
+
+                <label class="form-control-label">Which style of guitar-playing originated in the South of Spain?
+                  <select name="style" class="form-control" id="style" required>
+                    <option value="">Please choose an option</option>
+                    <option value="rock">Rock</option>
+                    <option value="funk">Funk</option>
+                    <option value="bossa-nova">Bossa Nova</option>
+                    <option value="flamenco">Flamenco</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="blues">Blues</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <!--  submit (type, value)-->
+                <input type="submit" class="btn btn-primary" value="Submit Answers">
+                <!--  reset (type, value) -->
+                <input type="reset" class="btn btn-secondary" value="Start Over">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
